@@ -1,0 +1,30 @@
+##################### P·O·S·T ######################
+POST  http://localhost:9000/api/users HTTP/1.1
+content-Type: application/json
+
+{
+    "nombre":"jose alfredo",
+    "usuario":"josea",
+    "password":"12345",
+    "email":"joseAlfredo@gmail.com"
+}
+
+##################### G·E·T = TODOS ######################
+GET http://localhost:9000/api/users/ HTTP/1.1
+
+##################### G·E·T = ID ######################
+GET http://localhost:9000/api/users/638168feb7225271ca480922 HTTP/1.1
+
+##################### P·U·T ######################
+PUT http://localhost:9000/api/users/638168feb7225271ca480922 HTTP/1.1
+content-Type: application/json
+
+{
+   "nombre":"juan carlos",
+    "usuario":"juan",
+    "password":"12345",
+    "email":"juancarlos@gmail.com"   
+}
+
+##################### D·E·L·E·T·E ######################
+DELETE http://localhost:9000/api/users/638168feb7225271ca480922 HTTP/1.1
